@@ -1,4 +1,4 @@
-# UD6 - PrÃ ctica 2 - Documentem el codi amb JavaDoc
+# UD6 - Práctica 2 - Documentar el código con JavaDoc
 
 * [1. Modifica la clase `Calculadora.java`](#1-modifica-la-clase-calculadorajava)
 * [2. **Documenta** el código de la clase `Calculadora` usando comentarios `JavaDoc`:](#2-documenta-el-código-de-la-clase-calculadora-usando-comentarios-javadoc)
