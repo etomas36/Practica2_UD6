@@ -58,6 +58,78 @@ public class Calculadora {
 	public int diveix(int a, int b) {
 		return a/b;
 	}
+	
+	
+	/**
+	 * Eleva @param a multiplicado tantas veces como indique @param b
+	 * Se realiza la elevacion de un numero tantas veces como sea indicado
+	 * @param a numero entero que actua como numero a elevar
+	 * @param b numero entero que actua como el numero elevador
+	 * @return valor int resultado de elevar a tantas veces como b indique
+	 */
+	public int elevar ( int a , int n ){
+
+	    int t = 1;
+
+	    for ( int i = 0; i < n ; i++ ){
+	        t = t * a;
+	    }
+
+	    return t; 
+	}
+	
+	
+	/**
+	 * Indica si @param a es par
+	 * Se comprueba si un numero es par o impar sacando su resto, comprobando que sea igual que 0
+	 * @param a numero entero a comprobar
+	 * @return boolean devuelve un valor booleano
+	 */
+	public boolean esPar ( int a ){
+
+	    boolean r;
+
+	    if ( a % 2 == 0) {
+	        r = true;
+	    } else {
+	        r = false;
+	    }
+
+	    return r;
+	}
+
+
+	/**
+	 * Comprobar si es un numero es multiplo de 2
+	 * Se comprueba si un numero es multiplo de 2 y posteriormente se divide entre 2 para volver a comprobarse
+	 * @param a numero entero a comprobar
+	 * @return String devuelve una cadena con un 1 o un 0 segun e numero si es multiplo de 2 o no.
+	 */
+	public String obtenerTodosLosMultiplosDeDos(int a){
+
+	    String r = "";
+	    int v = a;
+	    int v1;
+
+	    while ( v > 0) {
+	        v1 = v % 2;
+	        r = v1 + r;
+	        v = v / 2;
+	    }
+		return r;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }
 
